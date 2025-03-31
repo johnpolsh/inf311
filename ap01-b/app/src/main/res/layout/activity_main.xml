@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/display"
+        android:inputType="none"
+        android:editable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:gravity="end"
+        android:padding="16dp"
+        android:ems="10"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:columnCount="5"
+        android:rowCount="4"
+        android:padding="4dp"
+        app:layout_constraintTop_toBottomOf="@id/display">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="4"
+            android:layout_rowWeight="4"
+            android:columnCount="4"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/btn_n_7"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_7"
+                android:tag="7"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_8"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_8"
+                android:tag="8"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_9"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_9"
+                android:tag="9"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_div"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/div"
+                android:tag="/"
+                android:onClick="arith"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_4"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_4"
+                android:tag="4"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_5"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_5"
+                android:tag="5"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_6"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_6"
+                android:tag="6"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_times"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/times"
+                android:tag="*"
+                android:onClick="arith"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_1"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_1"
+                android:tag="1"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_2"
+                android:tag="2"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_3"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_3"
+                android:tag="3"
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_minus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/minus"
+                android:tag="-"
+                android:onClick="arith"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_n_0"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/n_0"
+                android:tag="0"
+                android:onClick="number"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="2"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_dot"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/dot"
+                android:tag="."
+                android:onClick="number"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_plus"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/plus"
+                android:tag="+"
+                android:onClick="arith"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="4"
+            android:columnCount="1"
+            android:rowCount="4">
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/back"
+                android:onClick="back"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/clear"
+                android:onClick="clear"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="1"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+            <Button
+                android:id="@+id/btn_equal"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/custom_btn"
+                android:text="@string/equal"
+                android:onClick="equals"
+                android:layout_columnSpan="1"
+                android:layout_rowSpan="2"
+                android:layout_rowWeight="2"
+                android:layout_columnWeight="1"
+                android:layout_margin="2dp" />
+
+        </GridLayout>
+
+    </GridLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

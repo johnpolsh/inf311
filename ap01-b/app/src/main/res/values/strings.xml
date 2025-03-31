@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">My Advanced Calculator</string>
+    <string name="n_0">0</string>
+    <string name="n_1">1</string>
+    <string name="n_2">2</string>
+    <string name="n_3">3</string>
+    <string name="n_4">4</string>
+    <string name="n_5">5</string>
+    <string name="n_6">6</string>
+    <string name="n_7">7</string>
+    <string name="n_8">8</string>
+    <string name="n_9">9</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="times">*</string>
+    <string name="div">/</string>
+    <string name="equal">=</string>
+    <string name="back"><![CDATA[<<]]></string>
+    <string name="clear">C</string>
+    <string name="dot">.</string>
+</resources>

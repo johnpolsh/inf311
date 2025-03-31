@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">My Simple Calculator</string>
+    <string name="value_1">Valor 1:</string>
+    <string name="value_2">Valor 2:</string>
+    <string name="btn_plus">+</string>
+    <string name="btn_minus">-</string>
+    <string name="btn_div">/</string>
+    <string name="btn_times">*</string>
+    <string name="label_result">O resultado é:</string>
+</resources>
