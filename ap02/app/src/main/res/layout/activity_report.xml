@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Report">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/report"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:layout_marginBottom="24dp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+                <TextView
+                    android:text="@string/name_label"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_name"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/age"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_age"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/weight"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_weight"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/height"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_height"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/imc"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_imc"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="@string/classi"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="8dp" />
+                <TextView
+                    android:id="@+id/text_classi"
+                    android:text="" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/redo_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:onClick="returnToForm"
+            android:text="@string/redo" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
